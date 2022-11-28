@@ -1,0 +1,12 @@
+<div class="mb-3" *ngIf="visible">
+    <label class="form-label">Nombre Completo:</label>
+    <input type="text" [(ngModel)] = "usuarioNombre" class="form-control" placeholder="Coloca tu nombre">
+  </div>
+
+  <br>
+<input type="button" (click)="AgregarUsuarioLista()" value="Guardar">
+
+<div *ngFor="let urs of usuarioList">
+
+    <p>{{urs}}</p>
+</div>
